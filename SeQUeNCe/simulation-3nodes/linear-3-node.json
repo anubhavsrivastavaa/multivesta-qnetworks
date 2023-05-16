@@ -1,0 +1,38 @@
+{
+    "nodes": [
+        {
+            "name": "a",
+            "type": "QuantumRouter"
+        },
+        {
+            "name": "b",
+            "type": "QuantumRouter"
+        },
+        {
+            "name": "c",
+            "type": "QuantumRouter"
+        }
+    ],
+    "qconnections": [
+        {
+            "node1": "a",
+            "node2": "b",
+            "attenuation": 0.2,
+            "distance": 50
+        },
+        {
+            "node1": "b",
+            "node2": "c",
+            "attenuation": 0.2,
+            "distance": 50
+        }
+    ],
+    "cchannels_table": {
+        "type": "RT",
+        "labels": ["a", "b", "c"],
+        "table": [[0,   1e9, 2e9],
+                  [1e9, 0,   1e9],
+                  [2e9, 1e9, 0]]
+    }
+}
+    

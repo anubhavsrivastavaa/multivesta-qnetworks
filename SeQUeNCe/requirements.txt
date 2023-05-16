@@ -1,0 +1,9 @@
+wheel
+numpy<1.22
+matplotlib
+pandas
+qutip>=4.6.0
+tqdm>=4.54.0
+networkx
+json5==0.8.4
+

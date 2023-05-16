@@ -1,0 +1,9 @@
+P_ac(T) = if (s.rval(0) > T*0.001 || s.rval("Entangled: (a, c)") == 1) 
+                then s.rval("Entangled: (a, c)") 
+          else if (s.rval("SWAP_FAILED: 1") == 1) 
+                then 0 
+              else  
+                #P_ac(T) 
+              fi 
+         fi;
+eval parametric(E[ P_ac(T) ], T, 2100, 4, 2101);

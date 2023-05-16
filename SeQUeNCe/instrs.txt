@@ -1,0 +1,11 @@
+- methods for all graphs
+- code to write sequence's data to excel in results folder
+- if empty then only run otherwise pick data from excel
+
+
+* bash script will by default not pass any args to main.py
+    so all scenarios will be computed - all graphs generated
+
+
+* main.py will always compute at run time simulator data (and not plot it) --- only reponsibiity is simul data generation
+* plot.py will always use csv files (both model and simulator) if present otherwise it will exit and print no file
